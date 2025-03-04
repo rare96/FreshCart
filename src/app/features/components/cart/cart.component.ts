@@ -7,7 +7,7 @@ import { LoaderComponent } from "../loader/loader.component";
 
 @Component({
   selector: 'app-cart',
-  imports: [LoaderComponent],
+  imports: [],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.scss'
 })

@@ -5,7 +5,7 @@ import { SliderComponent } from "../slider/slider.component";
 
 @Component({
   selector: 'app-home',
-  imports: [LoaderComponent, ProductsComponent, SliderComponent],
+  imports: [ProductsComponent, SliderComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
