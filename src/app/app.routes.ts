@@ -9,12 +9,14 @@ import { RegisterComponent } from './features/components/register/register.compo
 import { NotFoundComponent } from './features/components/not-found/not-found.component';
 import { SingleProductComponent } from './features/components/single-product/single-product.component';
 import { authGuard } from './core/guard/auth.guard';
+import { CheckoutComponent } from './features/components/checkout/checkout.component';
 
 
 export const routes: Routes = [
     {path:'',redirectTo:'/login', pathMatch:'full'},
     {path:'home', component:HomeComponent, title:'Home', canActivate:[authGuard]},
     {path:'cart', component:CartComponent, title:'Cart', canActivate:[authGuard]},
+    {path:'checkout/:cartId', component:CheckoutComponent, title:'CheckOut', canActivate:[authGuard]},
     {path:'products', component:ProductsComponent, title:'Products', canActivate:[authGuard]},
     {path:'productDetails/:id', component:SingleProductComponent, title:'productDetails', canActivate:[authGuard]},
     {path:'categories', component:CategoriesComponent, title:'Categories', canActivate:[authGuard]},
