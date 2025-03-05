@@ -20,10 +20,6 @@ export class BrandsComponent {
       error:(errr)=>{
         console.log(errr);
       },
-      complete:()=>{
-        console.log('complete');
-        
-      }
     })
   }
 }
